@@ -42,12 +42,18 @@ ul {
   margin: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 }
 .link {
   text-decoration: none;
@@ -62,7 +68,9 @@ ul {
 
 .header {
   background-color: var(--white-font-color);
+  border-bottom: 1px solid #ececec;
 }
+
 .header-item .link {
   display: block;
   padding: 32px 0;
@@ -153,6 +161,8 @@ ul {
 
 .section-title {
   background-color: var(--second-background-color);
+  padding-bottom: 200px;
+  padding-top: 200px;
 }
 .hero-title {
   color: var(--white-font-color);
@@ -162,10 +172,9 @@ ul {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  padding-top: 200px;
-  padding-bottom: 280px;
+  max-width: 696px;
+  margin: 0 auto;
   margin-bottom: 30px;
-  max-width: 969px;
 }
 
 .hero-button {
@@ -178,6 +187,9 @@ ul {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+  margin: 0 auto;
+  border-radius: 4px;
+  padding-bottom: 200px 50px;
 }
 
 .hero-button:hover,
@@ -188,6 +200,9 @@ ul {
 
 /* --------------------About------------------------ */
 
+.about-section {
+  padding: 94px 0;
+}
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -206,6 +221,7 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .about-text {
   font-size: 14px;
@@ -213,8 +229,22 @@ ul {
   letter-spacing: 0.03em;
   color: var(--second-font-color);
 }
+.about-list {
+  display: flex;
+}
 
+.about-item {
+  max-width: 270px;
+}
+
+.about-item:not(:last-child) {
+  margin-left: 30px;
+}
 /* --------------------What we do------------------------ */
+
+.todo-section {
+  padding-bottom: 94px;
+}
 
 .todo-title {
   font-weight: bold;
@@ -222,11 +252,20 @@ ul {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 
+.todo-list {
+  display: flex;
+}
+
+.todo-item:not(:last-child) {
+  margin-right: 30px;
+}
 /* --------------------Our team------------------------ */
-.ourteam-sec {
+.ourteam-section {
   background-color: #f5f4fa;
+  padding: 94px 0;
 }
 .ourteam-main-title {
   font-weight: bold;
@@ -234,6 +273,21 @@ ul {
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+.ourteam-list {
+  display: flex;
+}
+
+.ourteam-item {
+  margin-left: 30px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.ourteam-pic {
+  margin-bottom: 30px;
 }
 .ourteam-title {
   font-weight: 500;
@@ -241,6 +295,7 @@ ul {
   line-height: 1.9;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
 }
 .ourteam-text {
   font-size: 16px;
@@ -290,6 +345,19 @@ ul {
 }
 
 /* --------------------Portfolio------------------------ */
+
+.portfolio-section {
+  padding: 94px 0;
+}
+
+.portfolio-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.button-item:not(:last-child) {
+  margin-right: 8px;
+}
 
 .portfolio-btn {
   background: #f5f4fa;
