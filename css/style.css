@@ -280,14 +280,17 @@ img {
 .ourteam-item:not(:last-child) {
   margin-right: 30px;
 }
+
 .ourteam-item {
-  background: var(--white-font-color)
+  background: var(--white-font-color);
+  border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
 }
-.ourteam-pic {
-  margin-bottom: 30px;
+
+.ourteam-bottom-wrap {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .ourteam-title {
   font-weight: 500;
@@ -309,6 +312,8 @@ img {
 
 .footer {
   background-color: var(--second-background-color);
+  padding-bottom: 60px;
+  padding-top: 60px;
 }
 
 .logo-secword-footer {
@@ -317,11 +322,7 @@ img {
 
 .footer .logo {
   display: block;
-  padding-top: 60px;
   margin-bottom: 20px;
-}
-.footer-list {
-  padding-bottom: 60px;
 }
 
 .footer-adress-item {
@@ -370,8 +371,8 @@ img {
   flex-basis: calc(100% / 3 - 30px);
   margin-right: 30px;
   margin-bottom: 30px;
-  background: var(--white-font-color)
-border: 1px solid #EEEEEE;
+  background: var(--white-font-color);
+  border: 1px solid #eeeeee;
 }
 
 .button-item:not(:last-child) {
